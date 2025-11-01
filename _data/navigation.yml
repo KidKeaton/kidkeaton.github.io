@@ -15,12 +15,6 @@ en: &DEFAULT_EN
       section: services
     - title: "Client Work"
       section: portfolio
-    - title: "Approach"
-      section: about
-    - title: "Milestones"
-      section: timeline
-    - title: "Team"
-      section: team
     - title: "Contact"
       section: contact
 en-US:
@@ -63,11 +57,5 @@ ko: &DEFAULT_KO
       section: services
     - title: "고객 프로젝트"
       section: portfolio
-    - title: "진행 방식"
-      section: about
-    - title: "마일스톤"
-      section: timeline
-    - title: "팀"
-      section: team
     - title: "문의"
       section: contact

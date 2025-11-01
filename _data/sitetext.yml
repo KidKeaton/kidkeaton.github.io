@@ -37,43 +37,6 @@ en: &DEFAULT_EN
     section: portfolio
     closebutton: "Close Project"
 
-  timeline:
-    title: "Milestones"
-    text: "Key steps in delivering durable automation programs."
-    section: timeline
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "First Automations Shipped"
-        year: "2022"
-        desc: "Led rapid experiments that automated daily reporting and lead enrichment for SaaS founders, freeing teams from hours of manual data wrangling."
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "Milliarium Launch"
-        year: "2023"
-        desc: "Formalized Milliarium AI to offer repeatable automation frameworks, technical implementation, and ongoing optimization for growth-minded teams."
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "Agent Playbooks"
-        year: "2024"
-        desc: "Delivered agent-powered outreach and onboarding pipelines with full audit trails, safeguards, and performance insights."
-        image: assets/img/timeline/3.jpg
-        alt: "Walkthrough of an AI agent dashboard"
-      - title: "Scaling Partnerships"
-        year: "2025"
-        desc: "Partnering with operations teams to embed automation as infrastructure, blending human expertise with resilient AI systems."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "Let’s Build <br> Your Next <br> Milestone."
-
-  about:
-    title: "Approach"
-    text: "Human-centered automation"
-    body: "We partner with founders and operators to uncover friction, design automation that respects existing processes, and iterate until it feels native to the team. From discovery workshops to launch-day runbooks, every engagement is built for clarity, speed, and the right mix of human oversight."
-    section: about
-
   clients:
     title: "Teams We Support"
     text: "Operators and founders who trust Milliarium to keep their systems humming."
@@ -90,23 +53,6 @@ en: &DEFAULT_EN
       - title: "Consultancies"
         url: https://www.milliarium.me
         logo: assets/img/clients/creative-market.jpg
-
-  team:
-    title: "Meet the Team"
-    text: "Hands-on builders focused on measurable outcomes."
-    subtext: "Milliarium AI is led by technologists who have shipped production systems across startups and enterprise teams."
-    section: team
-    people:
-      - name: "Lewis Kim"
-        role: "Founder & Automation Architect"
-        image: assets/img/team/1.jpg
-        social:
-          - url: https://www.linkedin.com/in/lewis-kim/
-            icon: fab fa-linkedin-in
-          - url: https://github.com/KidKeaton
-            icon: fab fa-github
-          - url: mailto:business@milliarium.me
-            icon: fas fa-envelope
 
   contact:
     title: "Tell Us About Your Workflow"
@@ -169,40 +115,6 @@ ko:
     section: portfolio
     closebutton: "프로젝트 닫기"
 
-  timeline:
-    title: "마일스톤"
-    text: "지속 가능한 자동화를 구축하며 쌓아온 여정입니다."
-    section: timeline
-    events:
-      - title: "첫 자동화 배포"
-        year: "2022"
-        desc: "SaaS 창업팀을 위해 리드 enrichment와 일일 리포팅을 자동화하여 수시간의 수작업을 절감했습니다."
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "Milliarium 설립"
-        year: "2023"
-        desc: "재사용 가능한 자동화 프레임워크와 기술 구현, 지속적인 최적화를 제공하기 위해 Milliarium AI를 설립했습니다."
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "에이전트 플레이북 구축"
-        year: "2024"
-        desc: "감사 로그와 성능 인사이트를 갖춘 에이전트 기반 온보딩·아웃리치 파이프라인을 구현했습니다."
-        image: assets/img/timeline/3.jpg
-        alt: "AI 에이전트 대시보드 화면"
-      - title: "스케일링 파트너십"
-        year: "2025"
-        desc: "운영팀과 협업하여 자동화를 인프라로 내재화하고, 사람과 AI가 조화롭게 협업하는 시스템을 확장했습니다."
-        image: assets/img/timeline/4.jpg
-        alt:
-        align: right
-    end: "함께 다음 <br> 마일스톤을 <br> 만들어봐요."
-
-  about:
-    title: "진행 방식"
-    text: "사람 중심 자동화"
-    body: "창업자와 운영팀의 문제를 함께 정의하고, 기존 프로세스를 존중하는 자동화를 설계한 뒤 팀에 자연스럽게 녹아들 때까지 반복합니다. 발견 워크숍부터 런북 제공, 운영 지원까지 명확하고 빠른 실행을 지향합니다."
-    section: about
-
   clients:
     title: "함께하는 팀"
     text: "운영을 안정적으로 유지하기 위해 Milliarium을 선택한 파트너들입니다."
@@ -219,23 +131,6 @@ ko:
       - title: "컨설팅 파트너"
         url: https://www.milliarium.me
         logo: assets/img/clients/creative-market.jpg
-
-  team:
-    title: "팀 소개"
-    text: "정량적 성과에 집중하는 실무 빌더들입니다."
-    subtext: "Milliarium AI는 스타트업과 엔터프라이즈에서 프로덕션 시스템을 구축해 온 기술 리더들이 이끌고 있습니다."
-    section: team
-    people:
-      - name: "Lewis Kim"
-        role: "창업자 · 자동화 아키텍트"
-        image: assets/img/team/1.jpg
-        social:
-          - url: https://www.linkedin.com/in/lewis-kim/
-            icon: fab fa-linkedin-in
-          - url: https://github.com/KidKeaton
-            icon: fab fa-github
-          - url: mailto:business@milliarium.me
-            icon: fas fa-envelope
 
   contact:
     title: "워크플로를 알려주세요"
