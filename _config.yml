@@ -1,0 +1,76 @@
+# =========================================
+#  Site Settings
+# =========================================
+title: "Milliarium AI"
+description: "AI Automation, Agent Development, and Workflow Engineering"
+url: "https://www.milliarium.me"   # your main domain
+baseurl: ""                        # leave blank unless hosting in a subfolder
+lang: "en"
+
+# =========================================
+#  Theme and Layout
+# =========================================
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# =========================================
+#  Author & Branding
+# =========================================
+author:
+  name: "Lewis Kim"
+  email: "contact@milliarium.me"
+  twitter: "kidkeaton"
+  github: "KidKeaton"
+  linkedin: "lewis-kim"
+  description: "Building intelligent automation systems and AI agents for small businesses."
+
+# =========================================
+#  Navigation
+# =========================================
+# Create _pages/ folder with files matching these URLs (optional)
+nav_pages:
+  - title: "Home"
+    url: /
+  - title: "Projects"
+    url: /projects
+  - title: "Services"
+    url: /services
+  - title: "About"
+    url: /about
+  - title: "Contact"
+    url: /contact
+
+# =========================================
+#  Social & SEO
+# =========================================
+social_links:
+  github: https://github.com/KidKeaton
+  linkedin: https://www.linkedin.com/in/lewis-kim/
+  twitter: https://x.com/kidkeaton
+  email: mailto:contact@milliarium.me
+
+# Default image used in embeds / previews
+image: /assets/images/og-image.png
+
+# =========================================
+#  Build Settings
+# =========================================
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# =========================================
+#  Footer
+# =========================================
+footer: >
+  © 2025 Milliarium AI — Building scalable AI automations and intelligent agents.
