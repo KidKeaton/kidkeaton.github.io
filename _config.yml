@@ -4,30 +4,30 @@
 title: "Milliarium AI"
 description: "AI Automation, Agent Development, and Workflow Engineering"
 url: "https://www.milliarium.me"   # your main domain
-#baseurl: ""                        # leave blank unless hosting in a subfolder
 lang: "en"
 
 # =========================================
 #  Theme and Layout
 # =========================================
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: raviriley/agency-jekyll-theme
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-
+collections:
+  portfolio:
+    output: true
+  services:
+    output: true
 # =========================================
 #  Author & Branding
 # =========================================
 author:
   name: "Lewis Kim"
-  email: "contact@milliarium.me"
-  twitter: "kidkeaton"
-  github: "KidKeaton"
-  linkedin: "lewis-kim"
+  email: "business@milliarium.me"
+  github: "github.com/KidKeaton"
   description: "Building intelligent automation systems and AI agents for small businesses."
-
 # =========================================
 #  Navigation
 # =========================================
@@ -50,8 +50,7 @@ nav_pages:
 social_links:
   github: https://github.com/KidKeaton
   linkedin: https://www.linkedin.com/in/lewis-kim/
-  twitter: https://x.com/kidkeaton
-  email: mailto:contact@milliarium.me
+  email: business@milliarium.me
 
 # Default image used in embeds / previews
 image: /assets/images/og-image.png
