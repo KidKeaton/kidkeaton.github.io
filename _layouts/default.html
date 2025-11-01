@@ -1,0 +1,27 @@
+{% assign default_locale = site.locale | default: "en-US" %}
+{% assign page_locale = page.locale | default: default_locale %}
+{% assign html_lang = page_locale | replace: "_", "-" %}
+<!DOCTYPE html>
+<html lang="{{ html_lang | default: "en" }}" data-page-locale="{{ page_locale }}">
+
+    {% include head.html page_locale=page_locale %}
+
+    <body id="page-top">
+        {{ content }}
+        {% include footer.html page_locale=page_locale %}
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="{{ 'assets/js/jquery.min.js' | relative_url }}"></script>
+        <script src="{{ 'assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="{{ 'assets/js/jquery.easing.min.js' | relative_url }}"></script>
+
+        <!-- Contact form JavaScript -->
+        <script src="{{ 'assets/js/jqBootstrapValidation.js' | relative_url }}"></script>
+        <script src="{{ 'assets/js/contact_me.js' | relative_url }}"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="{{ 'assets/js/agency.min.js' | relative_url }}"></script>
+    </body>
+</html>

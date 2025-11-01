@@ -1,0 +1,45 @@
+{% assign default_locale = site.locale | default: "en-US" %}
+{% assign page_locale = include.page_locale | default: page.locale | default: default_locale %}
+{% assign sitetext_locale = site.data.sitetext[page_locale] | default: site.data.sitetext[default_locale] | default: site.data.sitetext %}
+{% assign portfolio_locale = include.portfolio_data | default: sitetext_locale.portfolio | default: site.data.sitetext.portfolio %}
+{% assign close_label = portfolio_locale.closebutton | default: "Close Project" %}
+
+<!-- Portfolio Modals -->
+{% for project in site.portfolio %}
+    {% assign title_localized = project["title_" | append: page_locale] | default: project.title %}
+    {% assign subtitle_localized = project["subtitle_" | append: page_locale] | default: project.subtitle %}
+    {% assign content_override = project["content_" | append: page_locale] %}
+    <div class="portfolio-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">{{ title_localized }}</h2>
+                                <p class="item-intro text-muted">{{ subtitle_localized }}</p>
+                                <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}">
+                                {% if content_override %}
+                                    {{ content_override | markdownify }}
+                                {% else %}
+                                    {{ project.content }}
+                                {% endif %}
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times"></i>
+                                    {{ close_label }}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+<!-- End Portfolio Modals -->

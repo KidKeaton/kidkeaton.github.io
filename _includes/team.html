@@ -1,0 +1,40 @@
+{% assign default_locale = site.locale | default: "en-US" %}
+{% assign page_locale = page.locale | default: default_locale %}
+{% assign sitetext_locale = site.data.sitetext[page_locale] | default: site.data.sitetext[default_locale] | default: site.data.sitetext %}
+{% assign team_data = sitetext_locale.team | default: site.data.sitetext.team %}
+
+<!-- Team -->
+<section class="bg-light page-section" id="{{ team_data.section | default: "team" }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">{{ team_data.title | default: "Team" }}</h2>
+                <h3 class="section-subheading text-muted">{{ team_data.text | default: "" }}</h3>
+                {% if team_data.subtext %}
+                    <p class="text-muted">{{ team_data.subtext }}</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row">
+            {% for member in team_data.people %}
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="{{ member.image }}" alt="{{ member.name }}">
+                        <h4>{{ member.name }}</h4>
+                        <p class="text-muted">{{ member.role }}</p>
+                        <ul class="list-inline social-buttons">
+                            {% for social in member.social %}
+                                <li class="list-inline-item">
+                                    <a href="{{ social.url }}">
+                                        <i class="{{ social.icon }}"></i>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End Team -->

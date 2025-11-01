@@ -1,15 +1,25 @@
 ---
-layout: default
-title: About
+layout: page
+title: About Milliarium AI
+locale: en-US
+permalink: /about/
 ---
 
-## About Milliarium AI
-At **Milliarium**, we design and deploy intelligent automation systems that streamline your operations and amplify efficiency.
+## Why Milliarium Exists
 
-### Our Focus
-- 🤖 AI-driven automation pipelines
-- ⚡ Agent integration for repetitive workflows
-- 🧠 Custom workflow orchestration using n8n + Docker
-- 🚀 Cloud-native deployment via Railway
+Operations teams deserve automation that ships fast and stays reliable. Milliarium AI pairs strategic discovery with hands-on implementation so you can scale without adding headcount.
 
-[Back to Home](/)
+## What We Deliver
+
+- **Agentic workflows** that monitor channels, take action, and loop humans in when judgment matters.
+- **Process automation** translating recurring tasks into resilient pipelines using n8n, Python, and custom microservices.
+- **Cloud deployment** tuned for observability, rollback safety, and cost efficiency across Railway, Fly.io, and AWS.
+
+## How Engagements Work
+
+1. **Discovery session** to unpack goals, metrics, and existing stack.
+2. **Rapid prototyping** to validate feasibility with real data.
+3. **Production rollout** with documentation, training, and on-call support.
+4. **Ongoing optimization** driven by usage analytics and team feedback.
+
+Looking to automate a workflow or augment your team with AI? [Reach out](/#contact) and let's map the path forward.

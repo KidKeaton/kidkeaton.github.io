@@ -1,0 +1,68 @@
+{% assign default_locale = site.locale | default: "en-US" %}
+{% assign page_locale = page.locale | default: default_locale %}
+{% assign sitetext_locale = site.data.sitetext[page_locale] | default: site.data.sitetext[default_locale] | default: site.data.sitetext %}
+{% assign footer_data = sitetext_locale.footer | default: site.data.sitetext.footer %}
+{% assign legal_path = "legal" %}
+{% if page_locale == "ko" %}
+    {% assign legal_path = "ko/legal" %}
+{% endif %}
+{% assign copyright_text = site.footer_text %}
+{% if site.footer_texts and site.footer_texts[page_locale] %}
+    {% assign copyright_text = site.footer_texts[page_locale] %}
+{% endif %}
+
+<!-- Footer -->
+<footer class="footer" id="footer" style="background-color: white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <span class="copyright">
+                    {% if copyright_text %}
+                        {{ copyright_text }}
+                    {% else %}
+                        Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}
+                    {% endif %}
+                </span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    {% for link in footer_data.social %}
+                        <li class="list-inline-item">
+                            {% if link.url %}
+                                <a href="{{ link.url }}">
+                                    {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+                                </a>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li class="list-inline-item">
+                        <a href="{{ legal_path | relative_url }}">{{ footer_data.legal | default: "Privacy Policy" }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+{% if page.layout == "page" %}
+<script>
+    fixPageShort();
+    function fixPageShort() {
+        if (window.innerHeight > document.body.offsetHeight) {
+            var footer = document.getElementById("footer");
+            if (!footer) {
+                return;
+            }
+            footer.style.position = "fixed";
+            footer.style.bottom = 0;
+            footer.style.right = 0;
+            footer.style.left = 0;
+            footer.style.width = "100%";
+        }
+    }
+</script>
+{% endif %}
+<!-- End Footer -->

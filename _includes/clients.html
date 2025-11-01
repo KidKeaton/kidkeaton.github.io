@@ -1,0 +1,32 @@
+{% assign default_locale = site.locale | default: "en-US" %}
+{% assign page_locale = page.locale | default: default_locale %}
+{% assign sitetext_locale = site.data.sitetext[page_locale] | default: site.data.sitetext[default_locale] | default: site.data.sitetext %}
+{% assign clients_data = sitetext_locale.clients | default: site.data.sitetext.clients %}
+
+<!-- Clients -->
+<section class="py-5" id="{{ clients_data.section | default: "clients" }}">
+    <div class="container">
+        {% if clients_data.title or clients_data.text %}
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    {% if clients_data.title %}
+                        <h2 class="section-heading text-uppercase">{{ clients_data.title }}</h2>
+                    {% endif %}
+                    {% if clients_data.text %}
+                        <h3 class="section-subheading text-muted">{{ clients_data.text }}</h3>
+                    {% endif %}
+                </div>
+            </div>
+        {% endif %}
+        <div class="row align-items-center">
+            {% for client in clients_data.list %}
+                <div class="col-md-3 col-sm-6">
+                    <a href="{{ client.url }}">
+                        <img class="img-fluid d-block mx-auto" src="{{ client.logo }}" alt="{{ client.title }}">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End Clients -->
