@@ -4,7 +4,7 @@
 title: "Milliarium AI"
 description: "AI Automation, Agent Development, and Workflow Engineering"
 url: "https://www.milliarium.me"   # your main domain
-baseurl: ""                        # leave blank unless hosting in a subfolder
+#baseurl: ""                        # leave blank unless hosting in a subfolder
 lang: "en"
 
 # =========================================
