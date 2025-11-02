@@ -17,12 +17,12 @@ content_ko: |
 
   {:.list-inline}
   - 날짜: 2024년 12월
-  - 고객: 제품 분석팀
+  - 고객: 제품 분석 리더
   - 카테고리: 리포팅 자동화
 ---
 Delivered a reporting pipeline that summarizes product usage, highlights anomalies, and drafts weekly executive briefs. Analysts approve final notes in minutes instead of hours.
 
 {:.list-inline}
 - Date: December 2024
-- Client: Product Analytics Team
+- Client: Product Analytics Lead
 - Category: Reporting Automation

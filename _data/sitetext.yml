@@ -12,7 +12,7 @@
 en: &DEFAULT_EN
   header:
     title: Automation That Ships
-    text: "Milliarium AI designs production-ready agents, workflows, and integrations tailored to how your team works."
+    text: "Milliarium AI designs production-ready agents, workflows, and integrations tailored to how you work."
     button: Explore Capabilities
     buttonlink: "#services"
 
@@ -38,7 +38,7 @@ en: &DEFAULT_EN
     closebutton: "Close Project"
 
   clients:
-    title: "Teams We Support"
+    title: "Clients I Support"
     text: "Operators and founders who trust Milliarium to keep their systems humming."
     section: clients
     max-height: 90px
@@ -46,13 +46,13 @@ en: &DEFAULT_EN
     list:
       - title: "Growth-Stage SaaS"
         url: https://www.milliarium.me
-        logo: assets/img/clients/envato.jpg
-      - title: "Operations Teams"
+        logo: assets/img/logo-text.png
+      - title: "Operations Leaders"
         url: https://www.milliarium.me
-        logo: assets/img/clients/designmodo.jpg
+        logo: assets/img/logo-text.png
       - title: "Consultancies"
         url: https://www.milliarium.me
-        logo: assets/img/clients/creative-market.jpg
+        logo: assets/img/logo-text.png
 
   contact:
     title: "Tell Us About Your Workflow"
@@ -90,7 +90,7 @@ en-AU:
 ko:
   header:
     title: "바로 실행되는 자동화"
-    text: "Milliarium AI는 팀의 업무 흐름에 맞춘 프로덕션급 에이전트와 자동화를 설계하고 구축합니다."
+    text: "Milliarium AI는 업무 흐름에 맞춘 프로덕션급 에이전트와 자동화를 설계하고 구축합니다."
     button: "서비스 살펴보기"
     buttonlink: "#services"
 
@@ -116,7 +116,7 @@ ko:
     closebutton: "프로젝트 닫기"
 
   clients:
-    title: "함께하는 팀"
+    title: "함께하는 파트너"
     text: "운영을 안정적으로 유지하기 위해 Milliarium을 선택한 파트너들입니다."
     section: clients
     max-height: 90px
@@ -124,13 +124,13 @@ ko:
     list:
       - title: "성장 단계 SaaS"
         url: https://www.milliarium.me
-        logo: assets/img/clients/envato.jpg
-      - title: "운영 팀"
+        logo: assets/img/logo-text.png
+      - title: "운영 리더"
         url: https://www.milliarium.me
-        logo: assets/img/clients/designmodo.jpg
+        logo: assets/img/logo-text.png
       - title: "컨설팅 파트너"
         url: https://www.milliarium.me
-        logo: assets/img/clients/creative-market.jpg
+        logo: assets/img/logo-text.png
 
   contact:
     title: "워크플로를 알려주세요"
@@ -231,16 +231,16 @@ es: &DEFAULT_ES
     list:
       - title: "envato"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
+        logo: assets/img/logo-text.png
       - title: "designmodo"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
+        logo: assets/img/logo-text.png
       - title: "themeforest"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
+        logo: assets/img/logo-text.png
       - title: "Creative Market"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+        logo: assets/img/logo-text.png
 
   team:
     title: "NUESTRO INCREÍBLE EQUIPO"

@@ -13,14 +13,14 @@ caption:
   subtitle_ko: 데이터 파이프라인
   thumbnail: assets/img/portfolio/04-thumbnail.jpg
 content_ko: |
-  로그, 변경 요청, 배포 아티팩트를 하나의 증적 저장소로 모으는 백그라운드 잡 프레임워크를 구축했습니다. 감사팀은 주간 다이제스트를 받고, 운영팀은 통제가 이탈하기 전에 선제적인 알림을 받습니다.
+  로그, 변경 요청, 배포 아티팩트를 하나의 증적 저장소로 모으는 백그라운드 잡 프레임워크를 구축했습니다. 감사 담당자는 주간 다이제스트를 받고, 운영 담당자는 통제가 이탈하기 전에 선제적인 알림을 받습니다.
 
   {:.list-inline}
   - 날짜: 2024년 11월
   - 고객: 핀테크 플랫폼
   - 카테고리: 데이터 엔지니어링
 ---
-Built a background job framework that pulls logs, change requests, and deployment artifacts into a unified evidence store. Auditors receive weekly digests and operations teams gain proactive alerts when controls drift.
+Built a background job framework that pulls logs, change requests, and deployment artifacts into a unified evidence store. Auditors receive weekly digests and operators gain proactive alerts when controls drift.
 
 {:.list-inline}
 - Date: November 2024

@@ -20,7 +20,7 @@ content_ko: |
   - 고객: B2B SaaS 스타트업
   - 카테고리: 에이전트 구현
 ---
-Milliarium built a GPT-backed agent that triages inbound leads, enriches them with third-party data, and assigns follow-ups with playbook suggestions right inside HubSpot. The result was a 63% reduction in manual review time and clean CRM hygiene across teams.
+Milliarium built a GPT-backed agent that triages inbound leads, enriches them with third-party data, and assigns follow-ups with playbook suggestions right inside HubSpot. The result was a 63% reduction in manual review time and clean CRM hygiene across the org.
 
 {:.list-inline}
 - Date: August 2024

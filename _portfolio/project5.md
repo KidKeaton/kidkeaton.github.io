@@ -17,12 +17,12 @@ content_ko: |
 
   {:.list-inline}
   - 날짜: 2024년 7월
-  - 고객: GTM 운영팀
+  - 고객: GTM 운영 리더
   - 카테고리: 시스템 통합
 ---
 Implemented resilient sync jobs across Airtable, HubSpot, and internal dashboards with automated schema drift detection. Stakeholders now trust a single source of truth for GTM planning.
 
 {:.list-inline}
 - Date: July 2024
-- Client: GTM Operations Team
+- Client: GTM Operations Lead
 - Category: Integrations
