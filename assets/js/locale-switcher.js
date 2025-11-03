@@ -150,7 +150,7 @@
         if (!dropdowns || dropdowns.length === 0) {
             return;
         }
-        var label = locale === "ko" ? "한국어" : "English";
+        var label = locale === "ko" ? "한국어" : "ENG";
         for (var i = 0; i < dropdowns.length; i += 1) {
             dropdowns[i].textContent = label;
         }

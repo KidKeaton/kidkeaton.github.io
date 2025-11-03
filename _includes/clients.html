@@ -21,8 +21,9 @@
         <div class="row align-items-center">
             {% for client in clients_data.list %}
                 <div class="col-md-3 col-sm-6">
-                    <a href="{{ client.url }}">
-                        <img class="img-fluid d-block mx-auto" src="{{ client.logo }}" alt="{{ client.title }}">
+                    <a class="client-card d-block text-center" href="{{ client.url }}">
+                        <img class="client-logo" src="{{ client.logo | default: site.logo.path }}" alt="{{ client.title }}">
+                        <span class="sr-only">{{ client.title }}</span>
                     </a>
                 </div>
             {% endfor %}

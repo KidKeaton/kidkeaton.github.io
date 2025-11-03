@@ -2,6 +2,7 @@
 {% assign page_locale = page.locale | default: default_locale %}
 {% assign sitetext_locale = site.data.sitetext[page_locale] | default: site.data.sitetext[default_locale] | default: site.data.sitetext %}
 {% assign portfolio_data = sitetext_locale.portfolio | default: site.data.sitetext.portfolio %}
+{% assign featured_projects = site.portfolio | slice: 0, 3 %}
 
 <!-- Portfolio Grid -->
 <section class="bg-light page-section" id="{{ portfolio_data.section | default: "portfolio" }}">
@@ -13,18 +14,22 @@
             </div>
         </div>
         <div class="row">
-            {% for project in site.portfolio %}
+            {% for project in featured_projects %}
                 {% assign caption = project.caption %}
                 {% assign caption_title = caption["title_" | append: page_locale] | default: caption.title %}
                 {% assign caption_subtitle = caption["subtitle_" | append: page_locale] | default: caption.subtitle %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#p{{ forloop.index }}">
+                    <a class="portfolio-link portfolio-card" data-toggle="modal" href="#p{{ forloop.index }}" aria-label="{{ caption_title }}">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="{{ site.data.style.portfolio-icon | default: "fas fa-plus fa-3x" }}"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="{{ caption.thumbnail }}" alt="">
+                        <div class="portfolio-thumb" aria-hidden="true">
+                            <span class="portfolio-thumb-initial">
+                                {{ caption_title | strip | slice: 0, 1 }}
+                            </span>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ caption_title }}</h4>

@@ -27,7 +27,11 @@ social:
   linkedin: "https://www.linkedin.com/in/lewis-kim/"
   email: "business@milliarium.me"
 
-footer_text: "© 2025 Milliarium AI — Building scalable AI automations and intelligent agents."
+footer_text: "© 2025 Milliarium AI — AI for your milestone."
 footer_texts:
-  en-US: "© 2025 Milliarium AI — Building scalable AI automations and intelligent agents."
+  en-US: "© 2025 Milliarium AI — AI for your milestone."
   ko: "© 2025 Milliarium AI — 확장 가능한 자동화와 지능형 시스템을 설계합니다."
+
+logo:
+  path: assets/img/logo-text.png
+  height: 48
