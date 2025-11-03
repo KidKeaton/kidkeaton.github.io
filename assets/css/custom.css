@@ -33,6 +33,16 @@ body {
     backdrop-filter: blur(4px);
 }
 
+.masthead .intro-text .intro-heading {
+    font-size: 30px !important; /* 60% of the theme baseline (50px) */
+}
+
+@media (min-width: 768px) {
+    .masthead .intro-text .intro-heading {
+        font-size: 45px !important; /* 60% of the theme baseline (75px) */
+    }
+}
+
 .page-section {
     background-color: transparent;
 }

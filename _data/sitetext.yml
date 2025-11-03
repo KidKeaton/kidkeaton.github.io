@@ -12,7 +12,7 @@
 en: &DEFAULT_EN
   header:
     title: Automation That Ships
-    text: "Milliarium AI designs production-ready agents, workflows, and integrations tailored to how you work."
+    text: "Agents, workflows, and integrations tailored for you."
     button: Explore Capabilities
     buttonlink: "#services"
 
