@@ -53,9 +53,9 @@ es-CO:
 # ------
 ko: &DEFAULT_KO
   nav:
-    - title: "서비스"
+    - title: "핵심 역량"
       section: services
-    - title: "고객 프로젝트"
+    - title: "고객 사례"
       section: portfolio
     - title: "문의"
       section: contact

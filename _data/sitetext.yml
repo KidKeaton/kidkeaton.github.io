@@ -90,13 +90,13 @@ en-AU:
 ko:
   header:
     title: "바로 실행되는 자동화"
-    text: "Milliarium AI는 업무 흐름에 맞춘 프로덕션급 에이전트와 자동화를 설계하고 구축합니다."
-    button: "서비스 살펴보기"
+    text: "Milliarium AI는 업무 방식에 맞춘 프로덕션급 에이전트, 워크플로, 통합을 설계하고 구축합니다."
+    button: "역량 살펴보기"
     buttonlink: "#services"
 
   services:
-    title: "서비스"
-    text: "전략 수립부터 프로덕션 배포까지 한 번에 지원합니다."
+    title: "핵심 역량"
+    text: "전략 수립부터 프로덕션 자동화 출시에 이르기까지 구현 중심 지원을 제공합니다."
     section: services
     list:
       - title: "자율형 에이전트"
@@ -110,14 +110,14 @@ ko:
         icon: fas fa-cloud-upload-alt
 
   portfolio:
-    title: "주요 프로젝트"
-    text: "자동화, 에이전트 운영, 워크플로 엔지니어링 사례를 살펴보세요."
+    title: "최근 작업"
+    text: "자동화, 에이전트 운영, 워크플로 엔지니어링 사례를 확인하세요."
     section: portfolio
     closebutton: "프로젝트 닫기"
 
   clients:
-    title: "함께하는 파트너"
-    text: "운영을 안정적으로 유지하기 위해 Milliarium을 선택한 파트너들입니다."
+    title: "지원하는 고객사"
+    text: "운영팀과 창업자가 Milliarium을 신뢰하고 시스템을 안정적으로 유지합니다."
     section: clients
     max-height: 90px
     horizontal-scrolling: ""
