@@ -42,7 +42,7 @@ analytics:
 pageviews:
   provider:
 
-theme_mode:
+theme_mode: dark
 
 cdn:
 avatar: https://github.com/KidKeaton.png
